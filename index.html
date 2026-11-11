@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="theme-color" content="#172950">
+<link rel="icon" href="data:,">
+<title>Pixel Quest — The Starbound Isles</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="game-shell">
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Pixel Quest home"><span class="brand-mark">✦</span><span>PIXEL<br>QUEST</span></a>
+    <div class="world-label"><span class="world-dot"></span> STARBOUND ISLES <span class="world-stage">WORLD 1 — 1</span></div>
+    <button class="sound-toggle" id="soundToggle" aria-label="Toggle sound">♫ <span>SOUND ON</span></button>
+  </header>
+  <section class="game-frame" aria-label="Pixel Quest platform game">
+    <div class="game-hud" id="hud">
+      <div class="hud-item score-item"><span class="hud-icon">★</span><span class="hud-caption">SCORE</span><b id="score">000000</b></div>
+      <div class="hud-item coin-item"><span class="coin-icon"></span><span class="hud-caption">COINS</span><b id="coins">00</b></div>
+      <div class="hud-center"><span class="level-name">THE SUNNY TRAIL</span><span class="level-sub">FIND THE STAR GATE</span></div>
+      <div class="hud-item lives-item"><span class="hud-caption">LIVES</span><b id="lives">♥ ♥ ♥</b></div>
+      <div class="hud-item time-item"><span class="hud-caption">TIME</span><b id="time">300</b></div>
+    </div>
+    <canvas id="game" width="960" height="540" aria-label="Game world"></canvas>
+    <div id="overlay" class="overlay">
+      <div class="overlay-card" id="overlayCard">
+        <div class="eyebrow"><span>✦</span> A LITTLE ADVENTURE <span>✦</span></div>
+        <h1>PIXEL<br><em>QUEST</em></h1>
+        <p class="story">A bright new day. A faraway flag.<br>One brave little hero.</p>
+        <button id="primaryButton" class="primary-button"><span>▶</span> START ADVENTURE</button>
+        <div class="controls-note"><span>← →</span> MOVE <i>·</i> <span>SHIFT</span> RUN <i>·</i> <span>SPACE</span> JUMP</div>
+        <div class="menu-foot">COLLECT COINS · STOMP THE GRUMPS · REACH THE STAR GATE</div>
+      </div>
+    </div>
+    <div class="touch-controls" aria-label="Touch game controls">
+      <div class="touch-dpad"><button data-key="left" aria-label="Move left">◀</button><button data-key="right" aria-label="Move right">▶</button></div>
+      <div class="touch-actions"><button data-key="run" aria-label="Run">✦</button><button data-key="jump" aria-label="Jump">A</button></div>
+    </div>
+    <div class="game-footer"><span>★ <b>TIP</b> — COINS MAKE YOUR JUMPS STRONGER</span><span class="footer-controls">ARROWS / A D <i>MOVE</i> &nbsp; SHIFT <i>RUN</i> &nbsp; SPACE <i>JUMP</i></span></div>
+  </section>
+  <footer class="page-footer"><span>✦ MADE FOR ADVENTURERS ✦</span><span>PIXEL QUEST <b>·</b> 198X-ISH</span><span>PRESS <b>M</b> TO MUTE</span></footer>
+</main>
+<script src="game.js"></script>
+</body>
+</html>
